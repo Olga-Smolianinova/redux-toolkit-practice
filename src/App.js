@@ -1,16 +1,17 @@
-import { Switch, Route, withRouter } from "react-router-dom";
-
 import { Suspense } from "react";
 
-import "./App.css";
-
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css"; //ссылка на  стили bootstrap
+import { Switch, Route, withRouter } from "react-router-dom";
 
 // Data
 import routes from "./routes";
 
 // Components
 import Navigation from "./components/Navigation";
+
+// Styles
+import "./App.css";
+
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"; //ссылка на  стили bootstrap
 
 // импорты
 // переключатель, роут, редирект
@@ -57,24 +58,3 @@ export default withRouter(App);
 // rxactions - redux actions
 // rxConst - redux const
 // rxReducer - redux const
-
-// npx create-react-app .
-
-// npm install gh-pages --save-dev
-//     "deploy": "gh-pages -d build",
-//     "clean": "gh-pages-clean"
-// after private -
-// "homepage": "https://yaroslav-uaa.github.io/...",
-// ||
-//     "predeploy": "npm run build",
-//     "deploy": "netlify deploy -p"
-//   "homepage": "https://goit-react-hw-06-phonebook.netlify.app",
-
-// npm install --save prop-types
-// npm install --save-dev prettier husky lint-staged
-// npm i uuid
-// npm install axios
-// npm install --save react-spinners
-// npm i netlify-cli -g - нетліфай
-// npm i redux
-// npm install react-router-dom

@@ -13,7 +13,7 @@ const routes = [
     key: uuid(),
     exact: true,
     path: "/",
-    component: lazy(() => import("./pages/Home/Home")),
+    component: lazy(() => import("./pages/Home/Container")),
   },
   {
     key: uuid(),

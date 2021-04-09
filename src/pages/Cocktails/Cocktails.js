@@ -37,7 +37,7 @@ class Cocktails extends Component {
     const { myQuery } = this.props;
 
     return getCocktail(myQuery).then((drinks) => {
-      console.log(drinks);
+      // console.log(drinks);
       if (drinks !== null) {
         // this.setState({ drinks });
         this.props.getMyCocktails(drinks);

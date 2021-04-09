@@ -1,16 +1,19 @@
+// импортируем функцию создания стора
 import { configureStore } from "@reduxjs/toolkit";
 
+// экспортируем стор
 import reducers from "./cocktails/reducers";
 
-// импортируем функцию создания стора
-
-// экспортируем стор
+import orderReducer from "./orders/reducers";
 
 const store = configureStore({
   reducer: {
     query: reducers.cocktailReducer,
     cocktailsData: reducers.allCocktailsReducer,
     showModal: reducers.modalReducer,
+
+    orders: orderReducer.orderReducer,
+    filterOrder: orderReducer.filterReducer,
   },
 });
 
